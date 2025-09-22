@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React ES6 Classes</title>
+</head>
+<body>
+    <!--Example 1-->
+    <script>
+        class Car {
+            constructor(name) {
+            this.brand = name;
+        }
+
+        present() {
+                return 'I have a ' + this.brand;
+            }
+        }
+
+        const mycar = new Car("Ford");
+        document.write(mycar.present());
+    </script>
+
+    <!--Example 2-->
+    <script>
+        class Car {
+            constructor(name1) {
+            this.brand1 = name1;
+        }
+
+        present1() {
+                return 'I have a ' + this.brand1;
+            }
+        }
+
+        class Model extends Car {
+            constructor(name1, mod) {
+            super(name1);
+            this.model = mod;
+        }  
+        show() {
+                return this.present1() + ', it is a ' + this.model
+            }
+        }
+
+        const mycar1 = new Model("Ford", "Mustang");
+        document.write(mycar1.show());
+    </script>
+</body>
+</html>
