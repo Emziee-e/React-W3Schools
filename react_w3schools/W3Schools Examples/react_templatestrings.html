@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Template Strings</title>
+</head>
+<body>
+    
+    <!--Example 1-->
+    <h1>Example</h1>
+
+    <p>With template strings you can write strings that span multiple lines and include embedded expressions:</p>
+
+    <div id="demo"></div>
+
+    <script>
+        const name = "John";
+        const age = 30;
+        const message = `Hello, ${name}! You are ${age} years old.`;
+
+        document.getElementById("demo").innerHTML = message;
+    </script>
+
+    <!--Example 2-->
+
+    <p>You can use the Array.map() function inside a template string:</p>
+
+    <div id="demo1"></div>
+
+    <script>
+        const items = ["apple", "banana", "orange"];
+        const list = `You have ${items.length} items:
+        ${items.map(item => `- ${item}`).join('\n')}`;
+
+        document.getElementById("demo1").innerHTML = list;
+    </script>
+
+    <!--Example 3-->
+    <p>You can use the tagged template inside a template string:</p>
+
+    <div id="demo2"></div>
+
+    <script>
+        function highlight(strings, fname) {
+            let x = fname.toUpperCase();
+            return strings[0] + x + strings[1];
+        }
+
+        let name1 = "John";
+
+        let text = highlight`Hello ${name1}, how are you?`;
+
+        document.getElementById("demo2").innerHTML = text;
+</script>
+
+</body>
+</html>

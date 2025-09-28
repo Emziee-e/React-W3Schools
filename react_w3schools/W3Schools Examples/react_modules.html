@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Modules</title>
+</head>
+<body>
+    
+    <!--Example 1-->
+    <script>
+        export const name = "Tobias"
+        export const age = 18
+    </script>
+
+    <!--Example 2-->
+    <script>
+        const message = () => {
+            const name1 = "Tobias";
+            const age1 = 18;
+            return name1 + ' is ' + age1 + 'years old';
+        };
+
+        export default message;
+    </script>
+
+    <!--Example 3-->
+    <p id="demo"></p>
+
+    <script type="module">
+        import { name1, age1 } from "./person.js";
+
+        document.getElementById("demo").innerHTML = "My name is " + name1;
+        document.getElementById("demo").innerHTML += ", I am " + age1 + ".";
+    </script>
+
+</body>
+</html>
