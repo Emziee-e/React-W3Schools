@@ -17,10 +17,13 @@ function MyHeader1() {
     );
 }
 
-createRoot(document.getElementById('sass')).render(
-    <MyHeader />
-);
+function Sass() {
+    return (
+        <>
+            <MyHeader />
+            <MyHeader1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('sass1')).render(
-    <MyHeader1 />
-);
+export default Sass

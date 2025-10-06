@@ -39,6 +39,12 @@ function Parent() {
   );
 }
 
-createRoot(document.getElementById('child')).render(
-  <Parent />
-);
+function PropsChild() {
+  return (
+    <>
+      <Parent />
+    </>
+  )
+}
+
+export default PropsChild

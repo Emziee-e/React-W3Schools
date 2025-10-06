@@ -1,4 +1,3 @@
-import { createRoot } from "react-dom/client";
 import Car3 from './vehicle.jsx';
 
 function Car() {
@@ -28,18 +27,15 @@ function Garage() {
   );
 }
 
-createRoot(document.getElementById('compo1')).render(
-    <Car />
-);
+function Component() {
+  return(
+    <>
+      <Car />
+      <Car1 color="red" />
+      <Garage />
+      <Car3 />
+    </>
+  )
+}
 
-createRoot(document.getElementById('compo2')).render(
-    <Car1 color="red"/>
-);
-
-createRoot(document.getElementById('compo3')).render(
-    <Garage />
-);
-
-createRoot(document.getElementById('compo4')).render(
-  <Car3 />
-);
+export default Component

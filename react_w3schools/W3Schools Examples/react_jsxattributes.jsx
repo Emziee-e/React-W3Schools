@@ -1,5 +1,3 @@
-import { createRoot } from "react-dom/client";
-
 function Car() {
     const x = "myclass1";
     return (
@@ -30,15 +28,14 @@ function Car2() {
     )
 }
 
+function Attributes() {
+    return (
+        <>
+            <Car />
+            <Car1 />
+            <Car2 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('attri')).render(
-    <Car />
-);
-
-createRoot(document.getElementById('attri1')).render(
-    <Car1 />
-);
-
-createRoot(document.getElementById('attri2')).render(
-    <Car2 />
-);
+export default Attributes

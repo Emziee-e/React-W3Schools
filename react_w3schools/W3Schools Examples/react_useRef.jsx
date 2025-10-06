@@ -43,10 +43,13 @@ function App1() {
     );
 }
 
-createRoot(document.getElementById('useref')).render(
-    <App />
-);
+function UseRef() {
+    return (
+        <>
+            <App />
+            <App1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('useref1')).render(
-    <App1 />
-);
+export default UseRef

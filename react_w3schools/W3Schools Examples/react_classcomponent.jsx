@@ -1,6 +1,4 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client'
-import ReactDOM from 'react-dom/client';
 
 class Car extends React.Component {
   render() {
@@ -168,17 +166,6 @@ class Header4 extends React.Component {
   }
 }
 
-createRoot(document.getElementById('class10')).render(
-  <Header4 favcol="yellow" />
-);
-
-/*
-This example has a button that changes the favorite color to blue,
-but since the getDerivedStateFromProps() method is called,
-the favorite color is still rendered as yellow
-(because the method updates the state
-with the color from the favcol attribute).
-*/
 
 class Header5 extends React.Component {
   constructor(props) {
@@ -200,18 +187,6 @@ class Header5 extends React.Component {
     );
   }
 }
-
-createRoot(document.getElementById('class11')).render(
-  <Header5 />
-);
-
-
-/*
-This example has a button that changes the favorite color to blue,
-but since the shouldComponentUpdate() method is called,
-the favorite color is still rendered as red
-(because the method returns false).
-*/
 
 class Header6 extends React.Component {
   constructor(props) {
@@ -242,47 +217,24 @@ class Header6 extends React.Component {
   }
 }
 
+function ClassComponent() {
+  return (
+    <>
+      <Car />
+      <Car1 />
+      <Car2 model="Mustang"/>
+      <Garage />
+      <Car4 />
+      <Car5 />
+      <Header />
+      <Header1 favcol="yellow"/>
+      <Header2 />
+      <Header3 />
+      <Header4 favcol="red"/>
+      <Header5 />
+      <Header6 />
+    </>
+  )
+}
 
-const container = document.getElementById('class4');
-const root = ReactDOM.createRoot(container);
-root.render(<Car4 />);
-
-createRoot(document.getElementById('class')).render(
-  <Car />
-);
-
-createRoot(document.getElementById('class1')).render(
-  <Car1 />
-);
-
-createRoot(document.getElementById('class2')).render(
-  <Car2 model="Mustang"/>
-);
-
-createRoot(document.getElementById('class3')).render(
-  <Garage />
-);
-
-createRoot(document.getElementById('class5')).render(
-  <Car5 />
-);
-
-createRoot(document.getElementById('class6')).render(
-  <Header />
-);
-
-createRoot(document.getElementById('class7')).render(
-  <Header1 favcol="yellow"/>
-);
-
-createRoot(document.getElementById('class8')).render(
-  <Header2 />
-);
-
-createRoot(document.getElementById('class9')).render(
-  <Header3 />
-);
-
-createRoot(document.getElementById('class12')).render(
-  <Header6 />
-);
+export default ClassComponent

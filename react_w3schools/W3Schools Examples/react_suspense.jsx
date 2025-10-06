@@ -42,14 +42,14 @@ function App2() {
     );
 }
 
-createRoot(document.getElementById('sus')).render(
-    <App />
-)
+function suspense() {
+    return (
+        <>
+            <App />
+            <App1 />
+            <App2 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('sus1')).render(
-    <App1 />
-)
-
-createRoot(document.getElementById('sus2')).render(
-    <App2 />
-);
+export default suspense

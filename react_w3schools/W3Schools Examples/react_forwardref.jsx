@@ -20,6 +20,12 @@ function App() {
     );
 }
 
-createRoot(document.getElementById('forward')).render(
-  <App />
-);
+function ForwardRef() {
+    return (
+        <>
+            <App />
+        </>
+    )
+}
+
+export default ForwardRef

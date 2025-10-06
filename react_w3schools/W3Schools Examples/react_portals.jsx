@@ -97,10 +97,13 @@ function App() {
     );
 }
 
-createRoot(document.getElementById('portals')).render(
-  <MyApp />
-)
+function Portals() {
+    return (
+        <>
+            <MyApp />
+            <App />
+        </>
+    )
+}
 
-createRoot(document.getElementById('portals1')).render(
-  <App />
-)
+export default Portals

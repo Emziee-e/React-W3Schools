@@ -33,6 +33,12 @@ function MyForm() {
     )
 }
 
-createRoot(document.getElementById('mult')).render(
-  <MyForm />
-);
+function MultipleInput() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+
+export default MultipleInput

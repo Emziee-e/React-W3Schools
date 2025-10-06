@@ -1,5 +1,9 @@
-import { createRoot } from 'react-dom/client'
+function Render() {
+  return (
+    <>
+      <p>Welcome!</p>
+    </>
+  )
+}
 
-createRoot(document.getElementById('render')).render(
-  <p>Welcome!</p>
-) 
+export default Render

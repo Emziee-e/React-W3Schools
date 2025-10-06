@@ -19,6 +19,12 @@ function MyForm() {
     )
 }
 
-createRoot(document.getElementById('select')).render(
-  <MyForm />
-);
+function Select() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+
+export default Select

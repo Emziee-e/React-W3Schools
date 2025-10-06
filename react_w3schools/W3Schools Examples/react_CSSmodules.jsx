@@ -37,14 +37,14 @@ function App2() {
     );
 }
 
-createRoot(document.getElementById('modules')).render(
-  <App />
-);
+function CSSModules() {
+    return (
+        <>
+            <App />
+            <App1 />
+            <App2 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('modules1')).render(
-  <App1 />
-);
-
-createRoot(document.getElementById('modules2')).render(
-  <App2 />
-);
+export default CSSModules

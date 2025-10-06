@@ -48,6 +48,12 @@ function MyForm() {
   );
 }
 
-createRoot(document.getElementById('radio')).render(
-  <MyForm />
-);
+function Radio() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+
+export default Radio

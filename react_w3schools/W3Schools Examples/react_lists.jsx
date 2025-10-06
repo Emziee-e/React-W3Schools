@@ -28,10 +28,13 @@ function MyCars1() {
     );
 }
 
-createRoot(document.getElementById('list')).render(
-    <MyCars />
-)
+function List() {
+    return (
+        <>
+            <MyCars />
+            <MyCars1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('list1')).render(
-    <MyCars1 />
-)
+export default List

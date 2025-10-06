@@ -56,6 +56,12 @@ function MyForm() {
   )
 }
 
-createRoot(document.getElementById('check')).render(
-  <MyForm />
-);
+function Checkbox() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+
+export default Checkbox

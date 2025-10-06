@@ -40,11 +40,13 @@ function App1() {
     );
 }
 
+function CSSinJS() {
+    return (
+        <>
+            <App />
+            <App1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('js')).render(
-  <App />
-);
-
-createRoot(document.getElementById('js1')).render(
-  <App1 />
-);
+export default CSSinJS

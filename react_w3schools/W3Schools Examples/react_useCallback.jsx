@@ -34,6 +34,12 @@ function WithCallbackExample() {
     );
 }
 
-createRoot(document.getElementById('usecallback')).render(
-  <WithCallbackExample />
-); 
+function UseCallback() {
+    return (
+        <>
+            <WithCallbackExample />
+        </>
+    )
+}
+
+export default UseCallback

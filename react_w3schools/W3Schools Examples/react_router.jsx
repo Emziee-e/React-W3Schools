@@ -41,43 +41,12 @@ const navLinkStyles = ({ isActive }) => ({
         padding: '5px 10px'
     });
 
-function Home1() {
-    return <h1>Home Page</h1>;
-}
-
-function About1() {
-    return <h1>About Page</h1>;
-}
-
-function Contact1() {
-    return <h1>Contact Page</h1>;
-}
-
-function App1() {
+function Router() {
     return (
-        <BrowserRouter>
-            {/* Navigation with NavLink for active styling */}
-            <nav style={{ marginBottom: '20px' }}>
-                <NavLink to="/" style={navLinkStyles}>Home</NavLink> |{" "}
-                <NavLink to="/about" style={navLinkStyles}>About</NavLink> |{" "}
-                <NavLink to="/contact" style={navLinkStyles}>Contact</NavLink>
-            </nav>
-
-            {/* Routes */}
-            <Routes>
-                <Route path="/" element={<Home1 />} />
-                <Route path="/about" element={<About1 />} />
-                <Route path="/contact" element={<Contact1 />} />
-            </Routes>
-        </BrowserRouter>
-  );
+        <>
+            <App />
+        </>
+    )
 }
 
-
-createRoot(document.getElementById('router')).render(
-  <App />
-);
-
-createRoot(document.getElementById('router1')).render(
-  <App1 />
-);
+export default Router

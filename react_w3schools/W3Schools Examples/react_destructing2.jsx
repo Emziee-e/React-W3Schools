@@ -1,4 +1,5 @@
-import { createRoot, useState } from 'react-dom/client'
+import { createRoot} from 'react-dom/client'
+import React, { useState } from 'react';
 
 function Counter() {
   // Destructuring the array returned by useState
@@ -11,6 +12,12 @@ function Counter() {
   );
 }
 
-createRoot(document.getElementById('dest1')).render(
-  <Counter />
-);
+function Destruct2() {
+  return (
+    <>
+      <Counter />
+    </>
+  )
+}
+
+export default Destruct2

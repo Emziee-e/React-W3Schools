@@ -27,6 +27,12 @@ function MyForm() {
     )
 }
 
-createRoot(document.getElementById('sub')).render(
-  <MyForm />
-);
+function SubmitForm() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+
+export default SubmitForm

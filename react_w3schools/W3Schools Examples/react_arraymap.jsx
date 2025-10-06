@@ -1,5 +1,3 @@
-import { createRoot } from "react-dom/client";
-
 const fruitlist = ['apple', 'banana', 'cherry'];
 
 function MyList() {
@@ -27,5 +25,13 @@ function UserList() {
     );
 }
 
-createRoot(document.getElementById('map')).render(<MyList />)
-createRoot(document.getElementById('map1')).render(<UserList />)
+function ArrayMap() {
+    return (
+        <>
+            <MyList />
+            <UserList />
+        </>
+    )
+}
+
+export default ArrayMap

@@ -1,5 +1,3 @@
-import { createRoot } from "react-dom/client";
-
 const myElement1 = (
     <>
     <p>I am a paragraph.</p>
@@ -7,6 +5,10 @@ const myElement1 = (
     </>
 );
 
-createRoot(document.getElementById('intro1')).render(
-    myElement1
-);
+function JSXIntro1() {
+    return (
+        myElement1
+    )
+}
+
+export default JSXIntro1

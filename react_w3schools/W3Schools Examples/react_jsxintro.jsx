@@ -1,7 +1,9 @@
-import { createRoot } from "react-dom/client";
-
 const myElement = <h1>I Love JSX</h1>;
 
-createRoot(document.getElementById('intro')).render(
-    myElement
-);
+function JSXIntro() {
+    return (
+        myElement
+    )
+}
+
+export default JSXIntro

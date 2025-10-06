@@ -21,6 +21,12 @@ function MyForm() {
     )
 }
 
-createRoot(document.getElementById('text')).render(
-  <MyForm />
-);
+function TextArea() {
+    return (
+        <>
+            <MyForm />
+        </>
+    )
+}
+ 
+export default TextArea

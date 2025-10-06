@@ -25,10 +25,13 @@ function Timer1() {
     return <h1>I've rendered {count} times!</h1>;
 }
 
-createRoot(document.getElementById('useeffect')).render(
-    <Timer />
-);
+function UseEffect() {
+    return (
+        <>
+            <Timer />
+            <Timer1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('useeffect1')).render(
-    <Timer1 />
-);
+export default UseEffect

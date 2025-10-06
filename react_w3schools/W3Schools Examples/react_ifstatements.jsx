@@ -1,5 +1,3 @@
-import { createRoot } from "react-dom/client";
-
 function Fruit() {
     const x = 5;
     let y = "Apple";
@@ -19,6 +17,12 @@ function Fruit1() {
     );
 }
 
-createRoot(document.getElementById('if')).render(
-    <Fruit />
-);
+function IfState() {
+    return (
+        <>
+            <Fruit />
+        </>
+    )
+}
+
+export default IfState

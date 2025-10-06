@@ -33,15 +33,14 @@ function Football2() {
   );
 }
 
+function Events() {
+  return (
+    <>
+      <Football />
+      <Football1 />
+      <Football2 />
+    </>
+  )
+}
 
-createRoot(document.getElementById('event')).render(
-    <Football />
-);
-
-createRoot(document.getElementById('event1')).render(
-    <Football1 />
-);
-
-createRoot(document.getElementById('event2')).render(
-  <Football2 />
-)
+export default Events

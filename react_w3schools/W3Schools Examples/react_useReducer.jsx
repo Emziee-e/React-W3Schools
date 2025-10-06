@@ -54,6 +54,12 @@ function Score() {
     );
 }
 
-createRoot(document.getElementById('usereducer')).render(
-  <Score />
-);
+function UseReducer() {
+    return (
+        <>
+            <Score />
+        </>
+    )
+}
+
+export default UseReducer

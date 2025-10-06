@@ -28,6 +28,12 @@ function App() {
     );
 }
 
-createRoot(document.getElementById('hoc')).render(
-  <App />
-);
+function HOC() {
+    return (
+        <>
+            <App />
+        </>
+    )
+}
+
+export default HOC

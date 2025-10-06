@@ -1,5 +1,3 @@
-import { createRoot } from "react-dom/client";
-
 function Car() {
     return (
         <>
@@ -34,15 +32,14 @@ function Car2() {
         </>
     )
 }
+function Expressions() {
+    return(
+        <>
+            <Car />
+            <Car1 />
+            <Car2 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('exp')).render(
-    <Car />
-);
-
-createRoot(document.getElementById('exp1')).render(
-    <Car1 />
-);
-
-createRoot(document.getElementById('exp2')).render(
-    <Car2 />
-);
+export default Expressions

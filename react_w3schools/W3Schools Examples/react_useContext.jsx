@@ -34,6 +34,12 @@ function Component3() {
     );
 }
 
-createRoot(document.getElementById('usecontext')).render(
-    <Component1 />
-);
+function UseContext() {
+    return (
+        <>
+            <Component1 />
+        </>
+    )
+}
+
+export default UseContext

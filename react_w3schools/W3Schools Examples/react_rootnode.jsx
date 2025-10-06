@@ -1,5 +1,8 @@
-import { createRoot } from 'react-dom/client'
+function RootNode() {
+  return (
+    <p>Welcome!</p>
+  )
 
-createRoot(document.getElementById('sandy')).render(
-  <p>Welcome!</p>
-) 
+}
+
+export default RootNode

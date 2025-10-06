@@ -1,5 +1,3 @@
-import { createRoot } from 'react-dom/client'
-
 const myElement2 = <h1 className="myclass">Hello World</h1>;
 
 function Car() {
@@ -11,10 +9,13 @@ function Car() {
   );
 }
 
-createRoot(document.getElementById('intro2')).render(
-    myElement2
-);
+function JSXIntro2() {
+  return (
+    <>
+      {myElement2}
+      <Car />
+    </>
+  )
+}
 
-createRoot(document.getElementById('compo')).render(
-  <Car />
-);
+export default JSXIntro2

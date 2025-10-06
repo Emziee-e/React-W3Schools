@@ -43,6 +43,12 @@ const expensiveCalculation = (num) => {
     return num;
 };
 
-createRoot(document.getElementById('usememo')).render(
-  <App />
-);
+function UseMemo() {
+    return (
+        <>
+            <App />
+        </>
+    )
+}
+ 
+export default UseMemo

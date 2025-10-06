@@ -41,14 +41,14 @@ function Goal1(props) {
     );
 }
 
-createRoot(document.getElementById('cond')).render(
-    <Goal isGoal={false} />
-);
+function Rendering() {
+    return (
+        <>
+            <Goal isGoal={false} />
+            <Car brand="Ford" />
+            <Goal1 isGoal={false} />
+        </>
+    )
+}
 
-createRoot(document.getElementById('cond1')).render(
-    <Car brand="Ford" />
-);
-
-createRoot(document.getElementById('cond2')).render(
-    <Goal1 isGoal={false} />
-);
+export default Rendering

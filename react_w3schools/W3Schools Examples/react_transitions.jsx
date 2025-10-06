@@ -28,6 +28,12 @@ function SearchBar() {
     );
 }
 
-createRoot(document.getElementById('use')).render(
-  <SearchBar />
-);
+function Transitions() {
+    return (
+        <>
+            <SearchBar />
+        </>
+    )
+}
+
+export default Transitions

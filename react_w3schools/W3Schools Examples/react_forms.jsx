@@ -28,10 +28,13 @@ function MyForm1() {
     )
 }
 
-createRoot(document.getElementById('forms')).render(
-    <MyForm />
-);
+function Forms() {
+    return (
+        <>
+            <MyForm />
+            <MyForm1 />
+        </>
+    )
+}
 
-createRoot(document.getElementById('forms1')).render(
-    <MyForm1 />
-);
+export default Forms

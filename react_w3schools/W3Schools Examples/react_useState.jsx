@@ -21,10 +21,13 @@ function FavoriteColor1() {
   )
 }
 
-createRoot(document.getElementById('usestate')).render(
-    <FavoriteColor />
-);
+function UseState() {
+  return (
+    <>
+      <FavoriteColor />
+      <FavoriteColor1 />
+    </>
+  )
+}
 
-createRoot(document.getElementById('usestate1')).render(
-    <FavoriteColor1 />
-);
+export default UseState

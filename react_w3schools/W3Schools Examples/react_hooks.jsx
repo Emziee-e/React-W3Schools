@@ -27,6 +27,12 @@ function FavoriteColor() {
     );
 }
 
-createRoot(document.getElementById('hooks')).render(
-  <FavoriteColor />
-);
+function Hooks() {
+    return (
+        <>
+            <FavoriteColor />
+        </>
+    )
+}
+
+export default Hooks

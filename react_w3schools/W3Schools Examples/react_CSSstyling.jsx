@@ -34,14 +34,14 @@ const Header2 = () => {
     );
 }
 
-createRoot(document.getElementById('style')).render(
-    <Header />
-);
-
-createRoot(document.getElementById('style1')).render(
-    <Header1 />
-);
-
-createRoot(document.getElementById('style2')).render(
-    <Header2 />
-);
+function CSSstyle() {
+    return (
+        <>
+            <Header />
+            <Header1 />
+            <Header2 />
+        </>
+    )
+}
+ 
+export default CSSstyle

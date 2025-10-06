@@ -14,6 +14,12 @@ const Home = () => {
     );
 };
 
-createRoot(document.getElementById('custom')).render(
-  <Home />
-);
+function CustomHooks() {
+    return (
+        <>
+            <Home />
+        </>
+    )
+}
+
+export default CustomHooks
